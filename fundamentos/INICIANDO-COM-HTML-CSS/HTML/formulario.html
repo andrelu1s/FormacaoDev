@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Formulário</h2>
+
+    <!-- method="post" esconde os dados da requisição
+    method="get" deixa os dados visiveis na url da requisicao
+    -->
+
+    <form action="exercicios.html" method="post">
+        <div>
+            <div><label for="nome">Nome:</label></div>
+            <input id="nome" name="nome" type="text" required>
+        </div>
+        <div>
+            <div><label for="email">Email:</label></div>
+            <input id="email" name="email" type="email" required>
+        </div> 
+        <div>
+            <div><label for="senha">Senha:</label></div>
+            <input id="senha" name="senha" type="password" required>
+        </div> 
+        <div>
+            <div><label for="bio">Fale sobre você:</label></div>
+            <textarea name="bio" id="bio" cols="20" rows="5"></textarea>
+        </div>  
+        <div>
+            <div>Tipo de residencia:</div>
+            <label for="casa">Casa</label>
+            <input type="radio" name="residencia" id="casa" value="casa">
+            <label for="apto">Apto</label>
+            <input type="radio" name="residencia" id="apto" value="apto">
+            <label for="sitio">Sítio</label>
+            <input type="radio" name="residencia" id="sitio" value="sitio">
+            <label for="fazenda">Fazenda</label>
+            <input type="radio" name="residencia" id="fazenda" value="fazenda">
+        </div>      
+        <div>
+            <select name="plano" id="plano">
+                <option value="">Selecione um plano</option>
+                <option value="gratis">Plano Gratuito</option>
+                <option value="silver">Plano Silver - R$59,00</option>
+                <option value="gold">Plano Gold - R$89,00</option>                
+            </select>
+        </div>
+        <div>
+            <div>Interesses:</div>
+            <input type="checkbox" name="tecnologia" id="tecnologia">
+            <label for="tecnologia">Tecnologia</label>
+            <input type="checkbox" name="esporte" id="esporte">
+            <label for="esporte">Esporte</label>
+            <input type="checkbox" name="cinema" id="cinema">
+            <label for="cinema">Cinema</label>
+        </div>
+        <div>
+            <button type="submit"> Salvar</button>
+            <button type="reset"> Limpar</button>
+        </div>
+    </form>
+
+    <br>
+    <br>
+    <button type="button" onclick="location.replace('exercicios.html')">Voltar</button>
+</body>
+
+</html>
