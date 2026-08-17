@@ -1,0 +1,96 @@
+<!-- Margin Collapse-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Seletores 1</title>
+    <style>
+        body
+        {
+            background-color: black;
+            color: white;
+        }   
+
+        section, span, p
+        {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+            background-color: crimson;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .circulo
+        {
+            border-radius: 50%;
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+            background-color: blueviolet;
+            font-size: 40px;
+            text-align: center;
+        }   
+
+        .destaque
+        {
+            border: 4px solid yellow;
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+            color: yellow;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        #botao-compra
+        {
+            height: 30px;
+            width: 120px;
+            background-color: forestgreen;
+            border: none;
+            color: white;
+            border: 1px solid white;
+            border-radius: 15px;
+            text-transform: uppercase;            
+        }
+
+        [href="http://www.google.com"], [deveSumir]
+        {            
+            display: none;
+        }
+
+        *{
+            border: 2px solid greenyellow;
+            margin: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Seletores de Elementos</h2>
+    <section>1</section>
+    <span>2</span>
+    <p>3</p>
+
+    <h2>Seletores de Classes</h2>
+    <div class="circulo">4</div>
+    <div class="circulo destaque">5</div>
+
+    <h2>Seletores de ID</h2>
+    <button id="botao-compra" >Comprar</button>
+
+    <h2>Seletores de Atributos</h2>
+    <a href="http://www.google.com">Google</a>
+    <div deveSumir>Esconder #01</div>
+    <main deveSumir>Esconder #02</main>
+
+    <h2>Seletor Universal</h2>
+    <label>Este é um parágrafo</label>
+
+</body>
+</html>
