@@ -1,0 +1,58 @@
+=== DESIGN vs ARQUITETURA na Engenharia de Computação ===
+
+## ARQUITETURA (Design de Alto Nível)
+Define a ESTRUTURA GERAL do sistema.
+- Decisões estratégicas e de longo prazo
+- Organização dos componentes principais
+- Como os sistemas se relacionam
+- Padrões de comunicação entre partes
+
+Analogia: Como dividir o pavimento entre Academia, Salas Comerciais, Airbnb?
+
+## DESIGN (Design de Baixo Nível)
+Define como cada PARTE funciona internamente.
+- Implementação específica de cada componente
+- Detalhes técnicos e decisões de código
+- Padrões de classes, métodos, funções
+- Como resolver problemas específicos
+
+Analogia: Como organizar as instalações dentro de cada espaço (Academia)?
+
+## CÓDIGO (Implementação)
+Executa conforme todo o planejamento realizado no Design.
+- Implementar demandas ou necessidades do que foi planejado no design
+
+Analogia: Executar a criação de um ambiente de acordo com o que foi proposto e cada um com suas realizado
+responsabilidades
+
+---
+
+## APLICADO NA ARQUITETURA LIMPA
+
+### Arquitetura Limpa = Organização em Camadas (Estrutura)
+1. Entities (Core Business Rules)
+2. Use Cases (Application Business Rules)
+3. Interface Adapters (Controllers, Gateways, Presenters)
+4. Frameworks & Drivers (Web, DB, UI)
+
+O objetivo: Separar responsabilidades e criar independência entre as camadas.
+
+### Design = Como Implementar cada Camada
+- Design patterns (Factory, Strategy, Observer, etc.)
+- Escolha de estruturas de dados
+- Organização de classes e interfaces
+- Métodos de comunicação entre componentes
+
+---
+
+## RESUMO
+
+ARQUITETURA = "O QUÊ" organizar (Visão estrutural do sistema inteiro)
+DESIGN = "COMO" organizar (Implementação prática de cada parte)
+
+Ambos trabalham juntos para criar sistemas:
+✓ Independentes de frameworks
+✓ Testáveis
+✓ Fáceis de manter
+✓ Escaláveis
+

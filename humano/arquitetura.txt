@@ -1,0 +1,2 @@
+objetivo da Arquitetura de Software é minimizar os recursos 
+humanos necessários para construir e manter um determinado sistema.
